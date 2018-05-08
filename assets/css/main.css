@@ -1603,10 +1603,15 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
+		color: black;
 		font-weight: 400;
 		line-height: 1em;
 		margin: 0 0 1em 0;
+	}
+
+	h4 {
+		line-height: 1em;
+		margin: 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1722,13 +1727,13 @@
 	}
 
 	header h2 + p {
-		font-size: 1.25em;
+		font-size: 2em;
 		margin-top: -1em;
 		line-height: 1.5em;
 	}
 
 	header h3 + p {
-		font-size: 1.1em;
+		font-size: 1.5em;
 		margin-top: -0.8em;
 		line-height: 1.5em;
 	}
@@ -1736,13 +1741,13 @@
 	header h4 + p,
 	header h5 + p,
 	header h6 + p {
-		font-size: 0.9em;
+		font-size: 1.5em;
 		margin-top: -0.6em;
 		line-height: 1.5em;
 	}
 
 	header.major h2 {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 /* Form */
@@ -1994,8 +1999,8 @@
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
 			border-radius: 0.35em;
+			border: .10em solid #a2a2a2;
 			content: '';
 			display: block;
 			height: 100%;
@@ -2046,6 +2051,23 @@
 		.image img {
 			border-radius: 0.35em;
 			display: block;
+		}
+
+		.skills img {
+			height: 100px;
+			width: auto;
+		}
+
+		.skills ul {
+			margin-top: 2.5em;
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.skills li {
+			width: 25%;
+			text-align: center;
 		}
 
 		.image.left {
@@ -2455,7 +2477,7 @@
 		}
 
 		.work-item p {
-			font-size: 0.8em;
+			font-size: 1em;
 			line-height: 1.5em;
 			margin: 0;
 		}
@@ -2479,16 +2501,16 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
+		background-color: black;
 		background-attachment: scroll,								fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								auto 100%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em;
+		padding: 3em 2em;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -2528,16 +2550,16 @@
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 10em;
 		}
 
 /* Footer */
 
-	#footer .icons {
+	#header .icons {
 		margin: 1em 0 0 0;
 	}
 
-		#footer .icons a {
+		#header .icons a {
 			color: rgba(255, 255, 255, 0.4);
 		}
 
@@ -2572,20 +2594,23 @@
 	#main {
 		margin-left: 35%;
 		max-width: 54em;
-		padding: 8em 4em 4em 4em;
+		padding: 2.5em 4em 4em 4em;
 		width: calc(100% - 35%);
 	}
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 1em 0 0 0;
+			padding: 1em 0 0 0;
 		}
 
 			#main > section:first-child {
 				border-top: 0;
 				margin-top: 0;
 				padding-top: 0;
+			}
+			#main > section > p {
+				margin: 0 0 1em 0;
 			}
 
 /* Poptrox */
@@ -2923,6 +2948,13 @@
 			}
 
 		/* Header */
+			#header .icons {
+				margin: 1em 0 0 0;
+			}
+
+				#header .icons a {
+					color: rgba(255, 255, 255, 0.4);
+				}
 
 			#header {
 				background-attachment: scroll;
@@ -2948,7 +2980,7 @@
 		/* Footer */
 
 			#footer {
-				background-attachment: scroll;
+				background-attachment: fixed;
 				background-color: #1f1815;
 				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 				background-position: top left,						bottom center;
@@ -2956,7 +2988,7 @@
 				background-size: auto,							cover;
 				bottom: auto;
 				left: auto;
-				padding: 4em 4em 6em 4em;
+				padding: 6em 4em 6em 4em;
 				position: relative;
 				text-align: center;
 				width: 100%;
