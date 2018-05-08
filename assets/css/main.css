@@ -2062,12 +2062,15 @@
 			margin-top: 2.5em;
 			list-style: none;
 			display: flex;
+			flex-wrap: wrap;
 			flex-direction: row;
 			justify-content: space-between;
 		}
 		.skills li {
 			width: 25%;
 			text-align: center;
+			min-width: 110px;
+			margin: 0 auto;
 		}
 
 		.image.left {
