@@ -1578,8 +1578,6 @@
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #49bf9d;
 		text-decoration: none;
 	}
 
@@ -2467,7 +2465,7 @@
 /* Work Item */
 
 	.work-item {
-		margin: 0 0 2em 0;
+		margin: 0 0 6em 0;
 	}
 
 		.work-item .image {
@@ -3159,4 +3157,28 @@
 				padding-left: 0;
 			}
 
+	}
+
+
+	a.screen-gif {
+		display: inline-block;
+		border-radius: 0.35em;
+		border: .05em solid #a2a2a2;
+		width: 100%;
+		height: 337px;
+		line-height: 337px;
+		margin: 1px auto;
+		background-color: transparent;
+		color: #a2a2a2;
+		text-align: center;
+	}
+
+	a.screen-gif img {
+		vertical-align: middle;
+		width: 90%;
+	}
+	a.screen-gif img.iphone{
+		vertical-align: middle;
+		height: 90%;
+		width: auto;
 	}
