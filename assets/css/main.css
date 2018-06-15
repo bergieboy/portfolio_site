@@ -3186,3 +3186,12 @@
 	a.resume {
 		color: #ffffff;
 	}
+
+	ul.skill-list {
+		padding: 0;
+		margin: 2em 0 2em 0;
+	}
+
+	ul.skill-list li {
+		padding: 0;
+	}
